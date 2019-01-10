@@ -1,0 +1,83 @@
+DIGEST e610e0689a9540191870186dc9c7da58
+Fbcv.vmtype
+R67:73 bcv.lib <> <> lib
+def 150:157 <> heap_idx
+R162:164 Coq.Init.Datatypes <> nat ind
+def 178:184 <> reg_idx
+R189:191 Coq.Init.Datatypes <> nat ind
+def 205:210 <> pc_idx
+R215:217 Coq.Init.Datatypes <> nat ind
+def 231:237 <> fld_idx
+R242:244 Coq.Init.Datatypes <> nat ind
+def 258:265 <> class_id
+R270:272 Coq.Init.Datatypes <> nat ind
+def 286:292 <> meth_id
+R297:299 Coq.Init.Datatypes <> nat ind
+ind 382:387 <> VMType
+constr 396:399 <> Tint
+constr 403:406 <> Tref
+constr 424:429 <> Object
+constr 433:435 <> Top
+constr 439:446 <> Trefnull
+R400:400 bcv.vmtype <> VMType ind
+R412:419 bcv.vmtype <> class_id def
+R421:421 bcv.vmtype <> VMType ind
+R430:430 bcv.vmtype <> VMType ind
+R436:436 bcv.vmtype <> VMType ind
+R447:447 bcv.vmtype <> VMType ind
+syndef 537:545 <> ClasseDef
+R551:556 bcv.lib Dico t def
+R558:563 bcv.vmtype <> VMType ind
+syndef 659:671 <> AllClassesDef
+R677:682 bcv.lib Dico t def
+R684:692 bcv.vmtype <> ClasseDef syndef
+ind 1194:1198 <> Instr
+constr 1211:1216 <> Iconst
+constr 1228:1231 <> Iadd
+constr 1235:1239 <> Iload
+constr 1258:1262 <> Rload
+constr 1295:1300 <> Istore
+constr 1319:1324 <> Rstore
+constr 1357:1361 <> Iifle
+constr 1377:1380 <> Goto
+constr 1396:1403 <> Getfield
+constr 1450:1457 <> Putfield
+constr 1504:1506 <> New
+constr 1526:1528 <> ret
+R1221:1223 Coq.Init.Datatypes <> nat ind
+R1225:1225 bcv.vmtype <> Instr ind
+R1232:1232 bcv.vmtype <> Instr ind
+R1247:1253 bcv.vmtype <> reg_idx def
+R1255:1255 bcv.vmtype <> Instr ind
+R1268:1275 bcv.vmtype <> class_id def
+R1284:1290 bcv.vmtype <> reg_idx def
+R1292:1292 bcv.vmtype <> Instr ind
+R1308:1314 bcv.vmtype <> reg_idx def
+R1316:1316 bcv.vmtype <> Instr ind
+R1330:1337 bcv.vmtype <> class_id def
+R1346:1352 bcv.vmtype <> reg_idx def
+R1354:1354 bcv.vmtype <> Instr ind
+R1367:1372 bcv.vmtype <> pc_idx def
+R1374:1374 bcv.vmtype <> Instr ind
+R1386:1391 bcv.vmtype <> pc_idx def
+R1393:1393 bcv.vmtype <> Instr ind
+R1409:1416 bcv.vmtype <> class_id def
+R1426:1432 bcv.vmtype <> fld_idx def
+R1440:1445 bcv.vmtype <> VMType ind
+R1447:1447 bcv.vmtype <> Instr ind
+R1463:1470 bcv.vmtype <> class_id def
+R1480:1486 bcv.vmtype <> fld_idx def
+R1494:1499 bcv.vmtype <> VMType ind
+R1501:1501 bcv.vmtype <> Instr ind
+R1514:1521 bcv.vmtype <> class_id def
+R1523:1523 bcv.vmtype <> Instr ind
+R1529:1529 bcv.vmtype <> Instr ind
+rec 1684:1692 <> MethodDef
+proj 1699:1704 <> instrs
+proj 1722:1729 <> argstype
+proj 1745:1751 <> restype
+R1707:1712 bcv.lib Dico t def
+R1714:1718 bcv.vmtype <> Instr ind
+R1732:1735 Coq.Init.Datatypes <> list ind
+R1737:1742 bcv.vmtype <> VMType ind
+R1753:1758 bcv.vmtype <> VMType ind

@@ -1,0 +1,50 @@
+BINNAME=tp
+COQDOCFLAGS=--toc-depth 3  --interpolate -utf8 --coqlib http://coq.inria.fr/stdlib/ -l
+
+.PHONY: html html_tp projet-tp.tgz
+
+all:abstract_correct.vo offensive_correct.vo
+
+html-tp: dvm_tp.vo
+	coqdoc -toc -d html-tp dvm_tp.v
+
+.SUFFIXES: .v .vo
+
+%.vo: %.v
+	coqc $<
+
+dvm_tp.v: dvm.v
+	../../utils/removesol/removesol < dvm.v > dvm_tp.v
+
+
+ADDTODOC=<br>Les modules FMapxxx, Set et List appartiennent à la librairie standard de Coq.<br><H2>Graphe de dépendance des modules<\/H2>\n<img align=\"top\" alt=\"dependency\ graph\"\ src\=\"dep.png\" usemap=\"\#dependencies\">\n
+
+
+clean::
+	rm -f dvm-tp.vo
+	rm -f .graph.dot _dep.cmapx
+
+cleanall::
+	rm -f dvm-tp.v
+	rm -rf projet-$(BINNAME)
+	rm -f projet-$(BINNAME).tgz
+	rm -f projet-$(BINNAME).zip
+	rm -rf html
+	rm -rf *.vo *.vio *.glob *.aux *~ .*.aux *.v.d *.cmapx .*.dot	
+
+projet-$(BINNAME).tgz:
+	./build_squel.sh
+
+
+graph: html
+	coqdep -f _CoqProject -sort | sed -e "s/ /\n/g" | sed -e "s/\.vo/\.v/g"  | sed -e "s/\.vio/\.v/g" | xargs coqdep -noglob -f _CoqProject -dumpgraph .graph.dot > /dev/null
+	sed -i -e "s/label=\"\([^\"]*\)\"/label=\"\1\" URL=\"bcv\.\1\.html\"/" .graph.dot
+	dot -Tpng -Granksep=0.1 -Grankdir=RL -Gsize="16,20" .graph.dot > html/dep.png
+	dot -Tcmapx -Granksep=0.1 -Grankdir=RL -Gsize="16,20" .graph.dot > _dep.cmapx
+	sed -i -e 's/<body>/<body>$(ADDTODOC)/' html/index.html
+	sed -i -e "/\"#dependencies\">/r _dep.cmapx" html/index.html
+
+
+### Local Variables: ***
+### mode: makefile ***
+### End: ***

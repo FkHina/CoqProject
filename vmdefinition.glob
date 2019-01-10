@@ -1,0 +1,653 @@
+DIGEST 087cc41be4ce73d389ebb578e0b2d37c
+Fbcv.vmdefinition
+R248:255 bcv.heritage <> <> lib
+R257:262 bcv.vmtype <> <> lib
+R264:276 bcv.LibHypsNaming <> <> lib
+R278:287 bcv.TacNewHyps <> <> lib
+R305:310 Coq.Setoids.Setoid <> <> lib
+modtype 450:454 <> VMVal
+ax 476:478 VMVal Val
+ax 504:506 VMVal v2t
+R512:515 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R516:521 bcv.vmtype <> VMType ind
+R509:511 bcv.vmdefinition VMVal Val defax
+R528:532 bcv.vmdefinition VMVal <> modtype
+R695:699 bcv.vmdefinition VMVal <> mod
+R704:708 bcv.heritage Herit <> mod
+mod 680:691 <> VMDefinition
+rec 896:898 VMDefinition Obj
+proj 915:922 VMDefinition objclass
+proj 969:977 VMDefinition objfields
+R925:932 bcv.vmtype <> class_id def
+R981:986 bcv.lib Dico t def
+R988:992 bcv.vmdefinition V Val defax
+syndef 1040:1044 VMDefinition Stack
+R1050:1053 Coq.Init.Datatypes <> list ind
+R1055:1059 bcv.vmdefinition V Val defax
+syndef 1074:1082 VMDefinition Registers
+R1088:1093 bcv.lib Dico t def
+R1095:1099 bcv.vmdefinition V Val defax
+syndef 1114:1117 VMDefinition Heap
+R1123:1128 bcv.lib Dico t def
+R1130:1132 bcv.vmdefinition VMDefinition Obj rec
+constr 1390:1400 VMDefinition Build_Frame
+rec 1369:1373 VMDefinition Frame
+proj 1410:1413 VMDefinition mdef
+proj 1435:1438 VMDefinition regs
+proj 1461:1465 VMDefinition stack
+proj 1483:1484 VMDefinition pc
+R1416:1424 bcv.vmtype <> MethodDef rec
+R1442:1450 bcv.vmdefinition VMDefinition Registers syndef
+R1468:1472 bcv.vmdefinition VMDefinition Stack syndef
+R1487:1492 bcv.vmtype <> pc_idx def
+def 1560:1569 VMDefinition Framestack
+R1574:1577 Coq.Init.Datatypes <> list ind
+R1579:1583 bcv.vmdefinition VMDefinition Frame rec
+constr 1674:1684 VMDefinition Build_State
+rec 1665:1669 VMDefinition State
+proj 1688:1692 VMDefinition frame
+proj 1703:1712 VMDefinition framestack
+proj 1727:1730 VMDefinition heap
+R1696:1700 bcv.vmdefinition VMDefinition Frame rec
+R1715:1724 bcv.vmdefinition VMDefinition Framestack def
+R1733:1736 bcv.vmdefinition VMDefinition Heap syndef
+constr 1931:1940 VMDefinition frame_eq_C
+rec 1901:1908 VMDefinition frame_eq
+R1956:1956 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1951:1954 bcv.vmdefinition VMDefinition mdef proj
+R1947:1948 bcv.vmdefinition <> f1 var
+R1961:1964 bcv.vmdefinition VMDefinition mdef proj
+R1957:1958 bcv.vmdefinition <> f2 var
+R1988:1997 bcv.lib Dico Equal def
+R2013:2016 bcv.vmdefinition VMDefinition regs proj
+R2009:2010 bcv.vmdefinition <> f2 var
+R2003:2006 bcv.vmdefinition VMDefinition regs proj
+R1999:2000 bcv.vmdefinition <> f1 var
+R2050:2052 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2044:2048 bcv.vmdefinition VMDefinition stack proj
+R2040:2041 bcv.vmdefinition <> f1 var
+R2057:2061 bcv.vmdefinition VMDefinition stack proj
+R2053:2054 bcv.vmdefinition <> f2 var
+R2092:2092 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2089:2090 bcv.vmdefinition VMDefinition pc proj
+R2085:2086 bcv.vmdefinition <> f1 var
+R2097:2098 bcv.vmdefinition VMDefinition pc proj
+R2093:2094 bcv.vmdefinition <> f1 var
+ind 2117:2122 VMDefinition obj_eq
+constr 2144:2151 VMDefinition reg_eq_C
+R2195:2213 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2243:2246 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2247:2252 bcv.vmdefinition <> obj_eq ind
+R2227:2229 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2218:2225 bcv.vmdefinition VMDefinition objclass proj
+R2234:2241 bcv.vmdefinition VMDefinition objclass proj
+R2155:2164 bcv.lib Dico Equal def
+R2185:2193 bcv.vmdefinition VMDefinition objfields proj
+R2170:2178 bcv.vmdefinition VMDefinition objfields proj
+ind 2274:2280 VMDefinition heap_eq
+constr 2302:2310 VMDefinition heap_eq_C
+R2337:2340 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2341:2347 bcv.vmdefinition <> heap_eq ind
+R2314:2323 bcv.lib Dico Equiv def
+R2325:2330 bcv.vmdefinition VMDefinition obj_eq ind
+ind 2369:2376 VMDefinition state_eq
+constr 2399:2408 VMDefinition state_eq_C
+R2442:2445 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2479:2499 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2527:2530 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2531:2538 bcv.vmdefinition <> state_eq ind
+R2500:2506 bcv.vmdefinition VMDefinition heap_eq ind
+R2522:2525 bcv.vmdefinition VMDefinition heap proj
+R2512:2515 bcv.vmdefinition VMDefinition heap proj
+R2461:2463 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2450:2459 bcv.vmdefinition VMDefinition framestack proj
+R2468:2477 bcv.vmdefinition VMDefinition framestack proj
+R2412:2419 bcv.vmdefinition VMDefinition frame_eq rec
+R2436:2440 bcv.vmdefinition VMDefinition frame proj
+R2425:2429 bcv.vmdefinition VMDefinition frame proj
+def 2697:2711 VMDefinition compat_val_type
+R2720:2727 bcv.vmdefinition H compat def
+R2739:2739 bcv.vmdefinition <> t var
+R2730:2734 bcv.vmdefinition V v2t defax
+R2736:2736 bcv.vmdefinition <> v var
+def 2755:2769 VMDefinition Compat_val_type
+R2797:2799 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2778:2792 bcv.vmdefinition VMDefinition compat_val_type def
+R2796:2796 bcv.vmdefinition <> t var
+R2794:2794 bcv.vmdefinition <> v var
+R2800:2803 Coq.Init.Datatypes <> true constr
+def 2819:2828 VMDefinition compat_val
+R2839:2846 bcv.vmdefinition H compat def
+R2860:2864 bcv.vmdefinition V v2t defax
+R2866:2867 bcv.vmdefinition <> v2 var
+R2849:2853 bcv.vmdefinition V v2t defax
+R2855:2856 bcv.vmdefinition <> v1 var
+def 2884:2893 VMDefinition Compat_val
+R2920:2922 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2904:2913 bcv.vmdefinition VMDefinition compat_val def
+R2918:2919 bcv.vmdefinition <> v2 var
+R2915:2916 bcv.vmdefinition <> v1 var
+R2923:2926 Coq.Init.Datatypes <> true constr
+ind 2942:2953 VMDefinition compat_stack
+constr 2986:2996 VMDefinition comstacknil
+constr 3024:3035 VMDefinition comstackcons
+R2961:2964 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2970:2973 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2965:2969 bcv.vmdefinition VMDefinition Stack syndef
+R2956:2960 bcv.vmdefinition VMDefinition Stack syndef
+R2999:3010 bcv.vmdefinition <> compat_stack ind
+R3016:3018 Coq.Init.Datatypes <> nil constr
+R3012:3014 Coq.Init.Datatypes <> nil constr
+R3091:3094 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3123:3146 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3147:3158 bcv.vmdefinition <> compat_stack ind
+R3169:3170 Coq.Init.Datatypes <> :list_scope:x_'::'_x not
+R3168:3168 bcv.vmdefinition <> f var
+R3171:3171 bcv.vmdefinition <> y var
+R3162:3163 Coq.Init.Datatypes <> :list_scope:x_'::'_x not
+R3161:3161 bcv.vmdefinition <> e var
+R3164:3164 bcv.vmdefinition <> x var
+R3095:3102 bcv.vmdefinition H Compat def
+R3115:3119 bcv.vmdefinition V v2t defax
+R3121:3121 bcv.vmdefinition <> f var
+R3105:3109 bcv.vmdefinition V v2t defax
+R3111:3111 bcv.vmdefinition <> e var
+R3075:3086 bcv.vmdefinition <> compat_stack ind
+R3090:3090 bcv.vmdefinition <> y var
+R3088:3088 bcv.vmdefinition <> x var
+def 3189:3199 VMDefinition compat_regs
+R3206:3214 bcv.vmdefinition VMDefinition Registers syndef
+R3259:3278 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3279:3285 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R3287:3288 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R3311:3314 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R3302:3304 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3289:3297 bcv.lib Dico find def
+R3301:3301 bcv.vmdefinition <> x var
+R3299:3299 bcv.vmdefinition <> i var
+R3305:3308 Coq.Init.Datatypes <> Some constr
+R3310:3310 bcv.vmdefinition <> b var
+R3315:3324 bcv.vmdefinition VMDefinition Compat_val def
+R3328:3328 bcv.vmdefinition <> b var
+R3326:3326 bcv.vmdefinition <> a var
+R3250:3252 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3237:3245 bcv.lib Dico find def
+R3249:3249 bcv.vmdefinition <> y var
+R3247:3247 bcv.vmdefinition <> i var
+R3253:3256 Coq.Init.Datatypes <> Some constr
+R3258:3258 bcv.vmdefinition <> a var
+rec 3452:3463 VMDefinition compat_state
+proj 3479:3487 VMDefinition compat_st
+proj 3553:3561 VMDefinition compat_rg
+proj 3624:3633 VMDefinition compat_stk
+proj 3678:3686 VMDefinition compat_hp
+proj 3729:3737 VMDefinition compat_fr
+R3491:3502 bcv.vmdefinition VMDefinition compat_stack ind
+R3537:3541 bcv.vmdefinition VMDefinition stack proj
+R3529:3533 bcv.vmdefinition VMDefinition frame proj
+R3525:3526 bcv.vmdefinition <> s' var
+R3516:3520 bcv.vmdefinition VMDefinition stack proj
+R3508:3512 bcv.vmdefinition VMDefinition frame proj
+R3505:3505 bcv.vmdefinition <> s var
+R3565:3575 bcv.vmdefinition VMDefinition compat_regs def
+R3609:3612 bcv.vmdefinition VMDefinition regs proj
+R3601:3605 bcv.vmdefinition VMDefinition frame proj
+R3597:3598 bcv.vmdefinition <> s' var
+R3589:3592 bcv.vmdefinition VMDefinition regs proj
+R3581:3585 bcv.vmdefinition VMDefinition frame proj
+R3578:3578 bcv.vmdefinition <> s var
+R3651:3653 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3640:3649 bcv.vmdefinition VMDefinition framestack proj
+R3637:3637 bcv.vmdefinition <> s var
+R3658:3667 bcv.vmdefinition VMDefinition framestack proj
+R3654:3655 bcv.vmdefinition <> s' var
+R3690:3696 bcv.vmdefinition VMDefinition heap_eq ind
+R3714:3717 bcv.vmdefinition VMDefinition heap proj
+R3710:3711 bcv.vmdefinition <> s' var
+R3702:3705 bcv.vmdefinition VMDefinition heap proj
+R3699:3699 bcv.vmdefinition <> s var
+R3740:3740 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3757:3761 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3779:3779 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3752:3755 bcv.vmdefinition VMDefinition mdef proj
+R3744:3748 bcv.vmdefinition VMDefinition frame proj
+R3741:3741 bcv.vmdefinition <> s var
+R3774:3777 bcv.vmdefinition VMDefinition mdef proj
+R3766:3770 bcv.vmdefinition VMDefinition frame proj
+R3762:3763 bcv.vmdefinition <> s' var
+R4117:4124 bcv.vmdefinition VMDefinition frame_eq rec
+R4117:4124 bcv.vmdefinition VMDefinition frame_eq rec
+R4163:4170 bcv.vmdefinition VMDefinition frame_eq rec
+R4163:4170 bcv.vmdefinition VMDefinition frame_eq rec
+R4203:4210 bcv.vmdefinition VMDefinition frame_eq rec
+R4203:4210 bcv.vmdefinition VMDefinition frame_eq rec
+R4241:4248 bcv.vmdefinition VMDefinition state_eq ind
+R4241:4248 bcv.vmdefinition VMDefinition state_eq ind
+R4287:4294 bcv.vmdefinition VMDefinition state_eq ind
+R4287:4294 bcv.vmdefinition VMDefinition state_eq ind
+R4327:4334 bcv.vmdefinition VMDefinition state_eq ind
+R4327:4334 bcv.vmdefinition VMDefinition state_eq ind
+R4365:4371 bcv.vmdefinition VMDefinition heap_eq ind
+R4365:4371 bcv.vmdefinition VMDefinition heap_eq ind
+R4410:4416 bcv.vmdefinition VMDefinition heap_eq ind
+R4410:4416 bcv.vmdefinition VMDefinition heap_eq ind
+R4449:4455 bcv.vmdefinition VMDefinition heap_eq ind
+R4449:4455 bcv.vmdefinition VMDefinition heap_eq ind
+R4486:4491 bcv.vmdefinition VMDefinition obj_eq ind
+R4486:4491 bcv.vmdefinition VMDefinition obj_eq ind
+R4530:4535 bcv.vmdefinition VMDefinition obj_eq ind
+R4530:4535 bcv.vmdefinition VMDefinition obj_eq ind
+R4568:4573 bcv.vmdefinition VMDefinition obj_eq ind
+R4568:4573 bcv.vmdefinition VMDefinition obj_eq ind
+R4605:4614 bcv.vmdefinition VMDefinition compat_val def
+R4605:4614 bcv.vmdefinition VMDefinition compat_val def
+R4656:4665 bcv.vmdefinition VMDefinition compat_val def
+R4656:4665 bcv.vmdefinition VMDefinition compat_val def
+R4701:4710 bcv.vmdefinition VMDefinition compat_val def
+R4701:4710 bcv.vmdefinition VMDefinition compat_val def
+R4744:4753 bcv.vmdefinition VMDefinition Compat_val def
+R4744:4753 bcv.vmdefinition VMDefinition Compat_val def
+R4795:4804 bcv.vmdefinition VMDefinition Compat_val def
+R4795:4804 bcv.vmdefinition VMDefinition Compat_val def
+R4840:4849 bcv.vmdefinition VMDefinition Compat_val def
+R4840:4849 bcv.vmdefinition VMDefinition Compat_val def
+R4883:4897 bcv.vmdefinition VMDefinition Compat_val_type def
+R4883:4897 bcv.vmdefinition VMDefinition Compat_val_type def
+R4938:4952 bcv.vmdefinition VMDefinition Compat_val_type def
+R4938:4952 bcv.vmdefinition VMDefinition Compat_val_type def
+R4987:5001 bcv.vmdefinition VMDefinition Compat_val_type def
+R4987:5001 bcv.vmdefinition VMDefinition Compat_val_type def
+R5034:5048 bcv.vmdefinition VMDefinition compat_val_type def
+R5034:5048 bcv.vmdefinition VMDefinition compat_val_type def
+R5089:5103 bcv.vmdefinition VMDefinition compat_val_type def
+R5089:5103 bcv.vmdefinition VMDefinition compat_val_type def
+R5138:5152 bcv.vmdefinition VMDefinition compat_val_type def
+R5138:5152 bcv.vmdefinition VMDefinition compat_val_type def
+R5185:5196 bcv.vmdefinition VMDefinition compat_stack ind
+R5185:5196 bcv.vmdefinition VMDefinition compat_stack ind
+R5239:5250 bcv.vmdefinition VMDefinition compat_stack ind
+R5239:5250 bcv.vmdefinition VMDefinition compat_stack ind
+R5286:5297 bcv.vmdefinition VMDefinition compat_stack ind
+R5286:5297 bcv.vmdefinition VMDefinition compat_stack ind
+R5330:5340 bcv.vmdefinition VMDefinition compat_regs def
+R5330:5340 bcv.vmdefinition VMDefinition compat_regs def
+R5383:5393 bcv.vmdefinition VMDefinition compat_regs def
+R5383:5393 bcv.vmdefinition VMDefinition compat_regs def
+R5429:5439 bcv.vmdefinition VMDefinition compat_regs def
+R5429:5439 bcv.vmdefinition VMDefinition compat_regs def
+R5472:5481 bcv.lib Dico Equal def
+R5472:5481 bcv.lib Dico Equal def
+R5519:5528 bcv.lib Dico Equal def
+R5519:5528 bcv.lib Dico Equal def
+R5561:5570 bcv.lib Dico Equal def
+R5561:5570 bcv.lib Dico Equal def
+R5602:5611 bcv.lib Dico Equal def
+R5602:5611 bcv.lib Dico Equal def
+prf 5803:5817 VMDefinition Compat_val_refl
+R5821:5829 Coq.Relations.Relation_Definitions <> reflexive def
+R5833:5842 bcv.vmdefinition VMDefinition Compat_val def
+R5865:5874 bcv.vmdefinition VMDefinition Compat_val def
+R5877:5886 bcv.vmdefinition VMDefinition compat_val def
+R5922:5934 bcv.vmdefinition H Compat_refl thm
+R5922:5934 bcv.vmdefinition H Compat_refl thm
+R5922:5934 bcv.vmdefinition H Compat_refl thm
+prf 5958:5973 VMDefinition Compat_val_trans
+R5977:5986 Coq.Relations.Relation_Definitions <> transitive def
+R5990:5999 bcv.vmdefinition VMDefinition Compat_val def
+R6022:6031 bcv.vmdefinition VMDefinition Compat_val def
+R6034:6043 bcv.vmdefinition VMDefinition compat_val def
+R6100:6104 bcv.vmdefinition V v2t defax
+R6110:6114 bcv.vmdefinition V v2t defax
+R6120:6124 bcv.vmdefinition V v2t defax
+R6079:6092 bcv.vmdefinition H Compat_trans thm
+R6100:6104 bcv.vmdefinition V v2t defax
+R6110:6114 bcv.vmdefinition V v2t defax
+R6120:6124 bcv.vmdefinition V v2t defax
+R6079:6092 bcv.vmdefinition H Compat_trans thm
+R6100:6104 bcv.vmdefinition V v2t defax
+R6110:6114 bcv.vmdefinition V v2t defax
+R6120:6124 bcv.vmdefinition V v2t defax
+R6079:6092 bcv.vmdefinition H Compat_trans thm
+R6100:6104 bcv.vmdefinition V v2t defax
+R6110:6114 bcv.vmdefinition V v2t defax
+R6120:6124 bcv.vmdefinition V v2t defax
+R6079:6092 bcv.vmdefinition H Compat_trans thm
+R6100:6104 bcv.vmdefinition V v2t defax
+R6110:6114 bcv.vmdefinition V v2t defax
+R6120:6124 bcv.vmdefinition V v2t defax
+R6079:6092 bcv.vmdefinition H Compat_trans thm
+R6176:6185 bcv.vmdefinition VMDefinition Compat_val def
+R6170:6174 bcv.vmdefinition V Val defax
+R6176:6185 bcv.vmdefinition VMDefinition Compat_val def
+R6170:6174 bcv.vmdefinition V Val defax
+R6209:6223 bcv.vmdefinition VMDefinition Compat_val_refl thm
+R6176:6185 bcv.vmdefinition VMDefinition Compat_val def
+R6170:6174 bcv.vmdefinition V Val defax
+R6248:6263 bcv.vmdefinition VMDefinition Compat_val_trans thm
+R6176:6185 bcv.vmdefinition VMDefinition Compat_val def
+R6170:6174 bcv.vmdefinition V Val defax
+R6209:6223 bcv.vmdefinition VMDefinition Compat_val_refl thm
+R6248:6263 bcv.vmdefinition VMDefinition Compat_val_trans thm
+prf 6293:6305 VMDefinition frame_eq_refl
+R6309:6317 Coq.Relations.Relation_Definitions <> reflexive def
+R6321:6328 bcv.vmdefinition VMDefinition frame_eq rec
+R6408:6426 bcv.lib Dicomore Equal_refl thm
+R6408:6426 bcv.lib Dicomore Equal_refl thm
+prf 6445:6456 VMDefinition frame_eq_sym
+R6460:6468 Coq.Relations.Relation_Definitions <> symmetric def
+R6472:6479 bcv.vmdefinition VMDefinition frame_eq rec
+R6571:6588 bcv.lib Dicomore Equal_sym thm
+R6571:6588 bcv.lib Dicomore Equal_sym thm
+prf 6623:6636 VMDefinition frame_eq_trans
+R6640:6649 Coq.Relations.Relation_Definitions <> transitive def
+R6653:6660 bcv.vmdefinition VMDefinition frame_eq rec
+R6856:6859 bcv.vmdefinition VMDefinition regs proj
+R6829:6848 bcv.lib Dicomore Equal_trans thm
+R6856:6859 bcv.vmdefinition VMDefinition regs proj
+R6829:6848 bcv.lib Dicomore Equal_trans thm
+R7139:7146 bcv.vmdefinition VMDefinition frame_eq rec
+R7132:7136 bcv.vmdefinition VMDefinition Frame rec
+R7139:7146 bcv.vmdefinition VMDefinition frame_eq rec
+R7132:7136 bcv.vmdefinition VMDefinition Frame rec
+R7207:7219 bcv.vmdefinition VMDefinition frame_eq_refl thm
+R7139:7146 bcv.vmdefinition VMDefinition frame_eq rec
+R7132:7136 bcv.vmdefinition VMDefinition Frame rec
+R7276:7287 bcv.vmdefinition VMDefinition frame_eq_sym thm
+R7139:7146 bcv.vmdefinition VMDefinition frame_eq rec
+R7132:7136 bcv.vmdefinition VMDefinition Frame rec
+R7348:7361 bcv.vmdefinition VMDefinition frame_eq_trans thm
+R7139:7146 bcv.vmdefinition VMDefinition frame_eq rec
+R7132:7136 bcv.vmdefinition VMDefinition Frame rec
+R7207:7219 bcv.vmdefinition VMDefinition frame_eq_refl thm
+R7276:7287 bcv.vmdefinition VMDefinition frame_eq_sym thm
+R7348:7361 bcv.vmdefinition VMDefinition frame_eq_trans thm
+R7446:7456 bcv.vmdefinition VMDefinition Build_Frame constr
+R7493:7497 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R7481:7482 Coq.Init.Logic <> eq ind
+R7484:7492 bcv.vmtype <> MethodDef rec
+R7515:7519 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R7499:7508 bcv.lib Dico Equal def
+R7510:7514 bcv.vmdefinition V Val defax
+R7529:7533 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R7521:7522 Coq.Init.Logic <> eq ind
+R7524:7528 bcv.vmdefinition VMDefinition Stack syndef
+R7544:7548 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R7535:7536 Coq.Init.Logic <> eq ind
+R7538:7543 bcv.vmtype <> pc_idx def
+R7549:7556 bcv.vmdefinition VMDefinition frame_eq rec
+prf 7654:7664 VMDefinition obj_eq_refl
+R7668:7676 Coq.Relations.Relation_Definitions <> reflexive def
+R7680:7685 bcv.vmdefinition VMDefinition obj_eq ind
+prf 7787:7796 VMDefinition obj_eq_sym
+R7800:7808 Coq.Relations.Relation_Definitions <> symmetric def
+R7812:7817 bcv.vmdefinition VMDefinition obj_eq ind
+prf 7966:7977 VMDefinition obj_eq_trans
+R7981:7990 Coq.Relations.Relation_Definitions <> transitive def
+R7994:7999 bcv.vmdefinition VMDefinition obj_eq ind
+R8118:8126 bcv.vmdefinition VMDefinition objfields proj
+R8118:8126 bcv.vmdefinition VMDefinition objfields proj
+R8157:8164 bcv.vmdefinition VMDefinition objclass proj
+R8157:8164 bcv.vmdefinition VMDefinition objclass proj
+R8216:8221 bcv.vmdefinition VMDefinition obj_eq ind
+R8211:8213 bcv.vmdefinition VMDefinition Obj rec
+R8216:8221 bcv.vmdefinition VMDefinition obj_eq ind
+R8211:8213 bcv.vmdefinition VMDefinition Obj rec
+R8282:8292 bcv.vmdefinition VMDefinition obj_eq_refl thm
+R8216:8221 bcv.vmdefinition VMDefinition obj_eq ind
+R8211:8213 bcv.vmdefinition VMDefinition Obj rec
+R8349:8358 bcv.vmdefinition VMDefinition obj_eq_sym thm
+R8216:8221 bcv.vmdefinition VMDefinition obj_eq ind
+R8211:8213 bcv.vmdefinition VMDefinition Obj rec
+R8419:8430 bcv.vmdefinition VMDefinition obj_eq_trans thm
+R8216:8221 bcv.vmdefinition VMDefinition obj_eq ind
+R8211:8213 bcv.vmdefinition VMDefinition Obj rec
+R8282:8292 bcv.vmdefinition VMDefinition obj_eq_refl thm
+R8349:8358 bcv.vmdefinition VMDefinition obj_eq_sym thm
+R8419:8430 bcv.vmdefinition VMDefinition obj_eq_trans thm
+prf 8492:8508 VMDefinition equiv_obj_eq_refl
+R8512:8520 Coq.Relations.Relation_Definitions <> reflexive def
+R8525:8534 bcv.lib Dico Equiv def
+R8536:8541 bcv.vmdefinition VMDefinition obj_eq ind
+R8655:8673 bcv.lib Dicomore MapsTo_fun thm
+R8655:8673 bcv.lib Dicomore MapsTo_fun thm
+R8655:8673 bcv.lib Dicomore MapsTo_fun thm
+prf 8722:8737 VMDefinition equiv_obj_eq_sym
+R8741:8749 Coq.Relations.Relation_Definitions <> symmetric def
+R8754:8763 bcv.lib Dico Equiv def
+R8765:8770 bcv.vmdefinition VMDefinition obj_eq ind
+prf 8948:8965 VMDefinition equiv_obj_eq_trans
+R8969:8978 Coq.Relations.Relation_Definitions <> transitive def
+R8983:8992 bcv.lib Dico Equiv def
+R8994:8999 bcv.vmdefinition VMDefinition obj_eq ind
+R9117:9123 bcv.lib Dico In def
+R9131:9133 bcv.vmdefinition VMDefinition Obj rec
+R9117:9123 bcv.lib Dico In def
+R9131:9133 bcv.vmdefinition VMDefinition Obj rec
+R9161:9167 bcv.lib Dico In def
+R9175:9177 bcv.vmdefinition VMDefinition Obj rec
+R9161:9167 bcv.lib Dico In def
+R9175:9177 bcv.vmdefinition VMDefinition Obj rec
+R9266:9271 bcv.vmdefinition VMDefinition obj_eq ind
+R9266:9271 bcv.vmdefinition VMDefinition obj_eq ind
+R9328:9333 bcv.vmdefinition VMDefinition obj_eq ind
+R9328:9333 bcv.vmdefinition VMDefinition obj_eq ind
+R9458:9467 bcv.lib Dico Equiv def
+R9469:9474 bcv.vmdefinition VMDefinition obj_eq ind
+R9445:9450 bcv.lib Dico t def
+R9452:9454 bcv.vmdefinition VMDefinition Obj rec
+R9458:9467 bcv.lib Dico Equiv def
+R9469:9474 bcv.vmdefinition VMDefinition obj_eq ind
+R9445:9450 bcv.lib Dico t def
+R9452:9454 bcv.vmdefinition VMDefinition Obj rec
+R9540:9556 bcv.vmdefinition VMDefinition equiv_obj_eq_refl thm
+R9458:9467 bcv.lib Dico Equiv def
+R9469:9474 bcv.vmdefinition VMDefinition obj_eq ind
+R9445:9450 bcv.lib Dico t def
+R9452:9454 bcv.vmdefinition VMDefinition Obj rec
+R9619:9634 bcv.vmdefinition VMDefinition equiv_obj_eq_sym thm
+R9458:9467 bcv.lib Dico Equiv def
+R9469:9474 bcv.vmdefinition VMDefinition obj_eq ind
+R9445:9450 bcv.lib Dico t def
+R9452:9454 bcv.vmdefinition VMDefinition Obj rec
+R9701:9718 bcv.vmdefinition VMDefinition equiv_obj_eq_trans thm
+R9458:9467 bcv.lib Dico Equiv def
+R9469:9474 bcv.vmdefinition VMDefinition obj_eq ind
+R9445:9450 bcv.lib Dico t def
+R9452:9454 bcv.vmdefinition VMDefinition Obj rec
+R9540:9556 bcv.vmdefinition VMDefinition equiv_obj_eq_refl thm
+R9619:9634 bcv.vmdefinition VMDefinition equiv_obj_eq_sym thm
+R9701:9718 bcv.vmdefinition VMDefinition equiv_obj_eq_trans thm
+prf 9792:9803 VMDefinition heap_eq_refl
+R9807:9815 Coq.Relations.Relation_Definitions <> reflexive def
+R9819:9825 bcv.vmdefinition VMDefinition heap_eq ind
+prf 9906:9916 VMDefinition heap_eq_sym
+R9920:9928 Coq.Relations.Relation_Definitions <> symmetric def
+R9932:9938 bcv.vmdefinition VMDefinition heap_eq ind
+prf 10052:10064 VMDefinition heap_eq_trans
+R10068:10077 Coq.Relations.Relation_Definitions <> transitive def
+R10081:10087 bcv.vmdefinition VMDefinition heap_eq ind
+R10244:10250 bcv.vmdefinition VMDefinition heap_eq ind
+R10238:10241 bcv.vmdefinition VMDefinition Heap syndef
+R10244:10250 bcv.vmdefinition VMDefinition heap_eq ind
+R10238:10241 bcv.vmdefinition VMDefinition Heap syndef
+R10311:10322 bcv.vmdefinition VMDefinition heap_eq_refl thm
+R10244:10250 bcv.vmdefinition VMDefinition heap_eq ind
+R10238:10241 bcv.vmdefinition VMDefinition Heap syndef
+R10379:10389 bcv.vmdefinition VMDefinition heap_eq_sym thm
+R10244:10250 bcv.vmdefinition VMDefinition heap_eq ind
+R10238:10241 bcv.vmdefinition VMDefinition Heap syndef
+R10450:10462 bcv.vmdefinition VMDefinition heap_eq_trans thm
+R10244:10250 bcv.vmdefinition VMDefinition heap_eq ind
+R10238:10241 bcv.vmdefinition VMDefinition Heap syndef
+R10311:10322 bcv.vmdefinition VMDefinition heap_eq_refl thm
+R10379:10389 bcv.vmdefinition VMDefinition heap_eq_sym thm
+R10450:10462 bcv.vmdefinition VMDefinition heap_eq_trans thm
+prf 10525:10537 VMDefinition state_eq_refl
+R10541:10549 Coq.Relations.Relation_Definitions <> reflexive def
+R10553:10560 bcv.vmdefinition VMDefinition state_eq ind
+R10642:10654 bcv.vmdefinition VMDefinition frame_eq_refl thm
+R10642:10654 bcv.vmdefinition VMDefinition frame_eq_refl thm
+prf 10692:10703 VMDefinition state_eq_sym
+R10707:10715 Coq.Relations.Relation_Definitions <> symmetric def
+R10719:10726 bcv.vmdefinition VMDefinition state_eq ind
+prf 10889:10902 VMDefinition state_eq_trans
+R10906:10915 Coq.Relations.Relation_Definitions <> transitive def
+R10919:10926 bcv.vmdefinition VMDefinition state_eq ind
+R11060:11064 bcv.vmdefinition VMDefinition frame proj
+R11039:11052 bcv.vmdefinition VMDefinition frame_eq_trans thm
+R11060:11064 bcv.vmdefinition VMDefinition frame proj
+R11039:11052 bcv.vmdefinition VMDefinition frame_eq_trans thm
+R11127:11130 bcv.vmdefinition VMDefinition heap proj
+R11127:11130 bcv.vmdefinition VMDefinition heap proj
+R11190:11197 bcv.vmdefinition VMDefinition state_eq ind
+R11183:11187 bcv.vmdefinition VMDefinition State rec
+R11190:11197 bcv.vmdefinition VMDefinition state_eq ind
+R11183:11187 bcv.vmdefinition VMDefinition State rec
+R11258:11270 bcv.vmdefinition VMDefinition state_eq_refl thm
+R11190:11197 bcv.vmdefinition VMDefinition state_eq ind
+R11183:11187 bcv.vmdefinition VMDefinition State rec
+R11327:11338 bcv.vmdefinition VMDefinition state_eq_sym thm
+R11190:11197 bcv.vmdefinition VMDefinition state_eq ind
+R11183:11187 bcv.vmdefinition VMDefinition State rec
+R11399:11412 bcv.vmdefinition VMDefinition state_eq_trans thm
+R11190:11197 bcv.vmdefinition VMDefinition state_eq ind
+R11183:11187 bcv.vmdefinition VMDefinition State rec
+R11258:11270 bcv.vmdefinition VMDefinition state_eq_refl thm
+R11327:11338 bcv.vmdefinition VMDefinition state_eq_sym thm
+R11399:11412 bcv.vmdefinition VMDefinition state_eq_trans thm
+R11495:11505 bcv.vmdefinition VMDefinition Build_State constr
+R11531:11535 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R11523:11530 bcv.vmdefinition VMDefinition frame_eq rec
+R11550:11554 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R11537:11538 Coq.Init.Logic <> eq ind
+R11540:11549 bcv.vmdefinition VMDefinition Framestack def
+R11572:11576 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R11555:11564 bcv.lib Dico Equiv def
+R11566:11571 bcv.vmdefinition VMDefinition obj_eq ind
+R11577:11584 bcv.vmdefinition VMDefinition state_eq ind
+prf 11755:11771 VMDefinition compat_stack_refl
+R11775:11783 Coq.Relations.Relation_Definitions <> reflexive def
+R11787:11798 bcv.vmdefinition VMDefinition compat_stack ind
+R11930:11942 bcv.vmdefinition H Compat_refl thm
+R11930:11942 bcv.vmdefinition H Compat_refl thm
+prf 11966:11983 VMDefinition compat_stack_trans
+R11987:11996 Coq.Relations.Relation_Definitions <> transitive def
+R12000:12011 bcv.vmdefinition VMDefinition compat_stack ind
+R12240:12244 bcv.vmdefinition V v2t defax
+R12219:12232 bcv.vmdefinition H Compat_trans thm
+R12240:12244 bcv.vmdefinition V v2t defax
+R12219:12232 bcv.vmdefinition H Compat_trans thm
+R12303:12314 bcv.vmdefinition VMDefinition compat_stack ind
+R12297:12301 bcv.vmdefinition VMDefinition Stack syndef
+R12303:12314 bcv.vmdefinition VMDefinition compat_stack ind
+R12297:12301 bcv.vmdefinition VMDefinition Stack syndef
+R12371:12387 bcv.vmdefinition VMDefinition compat_stack_refl thm
+R12303:12314 bcv.vmdefinition VMDefinition compat_stack ind
+R12297:12301 bcv.vmdefinition VMDefinition Stack syndef
+R12445:12462 bcv.vmdefinition VMDefinition compat_stack_trans thm
+R12303:12314 bcv.vmdefinition VMDefinition compat_stack ind
+R12297:12301 bcv.vmdefinition VMDefinition Stack syndef
+R12371:12387 bcv.vmdefinition VMDefinition compat_stack_refl thm
+R12445:12462 bcv.vmdefinition VMDefinition compat_stack_trans thm
+prf 12527:12542 VMDefinition compat_regs_refl
+R12546:12554 Coq.Relations.Relation_Definitions <> reflexive def
+R12558:12568 bcv.vmdefinition VMDefinition compat_regs def
+prf 12673:12689 VMDefinition compat_regs_trans
+R12693:12702 Coq.Relations.Relation_Definitions <> transitive def
+R12706:12716 bcv.vmdefinition VMDefinition compat_regs def
+R12751:12761 bcv.vmdefinition VMDefinition compat_regs def
+R12968:12983 bcv.vmdefinition VMDefinition Compat_val_trans thm
+R12968:12983 bcv.vmdefinition VMDefinition Compat_val_trans thm
+R13051:13061 bcv.vmdefinition VMDefinition compat_regs def
+R13041:13049 bcv.vmdefinition VMDefinition Registers syndef
+R13051:13061 bcv.vmdefinition VMDefinition compat_regs def
+R13041:13049 bcv.vmdefinition VMDefinition Registers syndef
+R13122:13137 bcv.vmdefinition VMDefinition compat_regs_refl thm
+R13051:13061 bcv.vmdefinition VMDefinition compat_regs def
+R13041:13049 bcv.vmdefinition VMDefinition Registers syndef
+R13199:13215 bcv.vmdefinition VMDefinition compat_regs_trans thm
+R13051:13061 bcv.vmdefinition VMDefinition compat_regs def
+R13041:13049 bcv.vmdefinition VMDefinition Registers syndef
+R13122:13137 bcv.vmdefinition VMDefinition compat_regs_refl thm
+R13199:13215 bcv.vmdefinition VMDefinition compat_regs_trans thm
+R13303:13313 bcv.vmdefinition VMDefinition compat_regs def
+R13383:13387 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R13373:13382 bcv.lib Dico Equal def
+R13398:13402 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R13388:13397 bcv.lib Dico Equal def
+R13403:13405 Coq.Init.Logic <> iff def
+R13836:13847 bcv.vmdefinition VMDefinition compat_state rec
+R13914:13918 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R13906:13913 bcv.vmdefinition VMDefinition state_eq ind
+R13927:13931 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R13919:13926 bcv.vmdefinition VMDefinition state_eq ind
+R13932:13934 Coq.Init.Logic <> iff def
+R14320:14324 bcv.vmdefinition VMDefinition stack proj
+R14327:14331 bcv.vmdefinition VMDefinition frame proj
+R14320:14324 bcv.vmdefinition VMDefinition stack proj
+R14327:14331 bcv.vmdefinition VMDefinition frame proj
+R14397:14413 bcv.vmdefinition VMDefinition compat_stack_refl thm
+R14397:14413 bcv.vmdefinition VMDefinition compat_stack_refl thm
+R14471:14474 bcv.vmdefinition VMDefinition regs proj
+R14477:14481 bcv.vmdefinition VMDefinition frame proj
+R14471:14474 bcv.vmdefinition VMDefinition regs proj
+R14477:14481 bcv.vmdefinition VMDefinition frame proj
+R14652:14655 bcv.vmdefinition VMDefinition heap proj
+R14652:14655 bcv.vmdefinition VMDefinition heap proj
+R14711:14714 bcv.vmdefinition VMDefinition heap proj
+R14711:14714 bcv.vmdefinition VMDefinition heap proj
+R14754:14757 bcv.vmdefinition VMDefinition mdef proj
+R14760:14764 bcv.vmdefinition VMDefinition frame proj
+R14754:14757 bcv.vmdefinition VMDefinition mdef proj
+R14760:14764 bcv.vmdefinition VMDefinition frame proj
+R14822:14825 bcv.vmdefinition VMDefinition mdef proj
+R14828:14832 bcv.vmdefinition VMDefinition frame proj
+R14822:14825 bcv.vmdefinition VMDefinition mdef proj
+R14828:14832 bcv.vmdefinition VMDefinition frame proj
+prf 15234:15250 VMDefinition compat_state_refl
+R15254:15262 Coq.Relations.Relation_Definitions <> reflexive def
+R15266:15277 bcv.vmdefinition VMDefinition compat_state rec
+prf 15402:15417 VMDefinition compat_state_eq'
+R15445:15448 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R15449:15460 bcv.vmdefinition VMDefinition compat_state rec
+R15464:15464 bcv.vmdefinition <> y var
+R15462:15462 bcv.vmdefinition <> x var
+R15433:15440 bcv.vmdefinition VMDefinition state_eq ind
+R15444:15444 bcv.vmdefinition <> y var
+R15442:15442 bcv.vmdefinition <> x var
+R15519:15535 bcv.vmdefinition VMDefinition compat_state_refl thm
+R15519:15535 bcv.vmdefinition VMDefinition compat_state_refl thm
+prf 15554:15571 VMDefinition compat_state_trans
+R15575:15584 Coq.Relations.Relation_Definitions <> transitive def
+R15588:15599 bcv.vmdefinition VMDefinition compat_state rec
+R15792:15796 bcv.vmdefinition VMDefinition stack proj
+R15799:15803 bcv.vmdefinition VMDefinition frame proj
+R15792:15796 bcv.vmdefinition VMDefinition stack proj
+R15799:15803 bcv.vmdefinition VMDefinition frame proj
+R15842:15845 bcv.vmdefinition VMDefinition regs proj
+R15848:15852 bcv.vmdefinition VMDefinition frame proj
+R15842:15845 bcv.vmdefinition VMDefinition regs proj
+R15848:15852 bcv.vmdefinition VMDefinition frame proj
+R15891:15900 bcv.vmdefinition VMDefinition framestack proj
+R15891:15900 bcv.vmdefinition VMDefinition framestack proj
+R15938:15941 bcv.vmdefinition VMDefinition heap proj
+R15938:15941 bcv.vmdefinition VMDefinition heap proj
+R15979:15982 bcv.vmdefinition VMDefinition mdef proj
+R15985:15989 bcv.vmdefinition VMDefinition frame proj
+R15979:15982 bcv.vmdefinition VMDefinition mdef proj
+R15985:15989 bcv.vmdefinition VMDefinition frame proj
+R16049:16060 bcv.vmdefinition VMDefinition compat_state rec
+R16043:16047 bcv.vmdefinition VMDefinition State rec
+R16049:16060 bcv.vmdefinition VMDefinition compat_state rec
+R16043:16047 bcv.vmdefinition VMDefinition State rec
+R16117:16133 bcv.vmdefinition VMDefinition compat_state_refl thm
+R16049:16060 bcv.vmdefinition VMDefinition compat_state rec
+R16043:16047 bcv.vmdefinition VMDefinition State rec
+R16191:16208 bcv.vmdefinition VMDefinition compat_state_trans thm
+R16049:16060 bcv.vmdefinition VMDefinition compat_state rec
+R16043:16047 bcv.vmdefinition VMDefinition State rec
+R16117:16133 bcv.vmdefinition VMDefinition compat_state_refl thm
+R16191:16208 bcv.vmdefinition VMDefinition compat_state_trans thm
+R16376:16376 bcv.vmdefinition H <> modtype
+R16389:16389 bcv.vmdefinition V <> modtype
+R16396:16407 bcv.vmdefinition VMDefinition <> mod

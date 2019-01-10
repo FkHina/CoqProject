@@ -1,0 +1,144 @@
+DIGEST 7f074365627f4b09fdaf3f5a2f1ad047
+Fbcv.avm
+R24:31 bcv.heritage <> <> lib
+R33:38 bcv.vmtype <> <> lib
+R40:51 bcv.vmdefinition <> <> lib
+R54:66 bcv.LibHypsNaming <> <> lib
+R84:87 Coq.Lists.List <> <> lib
+R301:305 bcv.vmdefinition VMVal <> mod
+mod 291:296 <> AbsVal
+def 322:324 AbsVal Val
+R329:334 bcv.vmtype <> VMType ind
+def 402:404 AbsVal v2t
+R409:411 bcv.avm AbsVal Val def
+R415:420 bcv.vmtype <> VMType ind
+R425:425 bcv.avm <> v var
+R433:438 bcv.avm AbsVal <> mod
+R462:466 bcv.heritage Herit <> mod
+mod 450:450 <> A
+R486:497 bcv.vmdefinition VMDefinition <> modtype
+R499:504 bcv.avm AbsVal <> modtype
+R507:507 bcv.avm H <> modtype
+mod 479:481 <> A.Abs
+R521:523 bcv.avm A.Abs <> modtype
+R979:983 bcv.avm A State rec
+R987:990 Coq.Init.Datatypes <> list ind
+R993:998 Coq.Init.Datatypes <> option ind
+R1000:1004 bcv.avm A State rec
+R1014:1015 Coq.Lists.List ListNotations :list_scope:'['_']' not
+R1014:1015 Coq.Lists.List ListNotations :list_scope:'['_']' not
+R1014:1015 Coq.Lists.List ListNotations :list_scope:'['_']' not
+R1089:1096 bcv.lib Dico add def
+not 1071:1071 A ::x_'-->'_x_','_x
+def 1155:1158 A prog
+R1160:1168 bcv.vmtype <> MethodDef rec
+R1181:1366 bcv.vmtype <> Build_MethodDef constr
+R1363:1366 bcv.vmtype <> Tint constr
+R1329:1332 Coq.Init.Datatypes <> :list_scope:x_'::'_x not
+R1325:1328 bcv.vmtype <> Tint constr
+R1337:1339 Coq.Init.Datatypes <> :list_scope:x_'::'_x not
+R1333:1336 bcv.vmtype <> Tint constr
+R1340:1342 Coq.Init.Datatypes <> nil constr
+R1193:1197 bcv.avm A ::x_'-->'_x_','_x not
+R1205:1225 bcv.avm A ::x_'-->'_x_','_x not
+R1198:1202 bcv.vmtype <> Iload constr
+R1227:1231 bcv.avm A ::x_'-->'_x_','_x not
+R1240:1260 bcv.avm A ::x_'-->'_x_','_x not
+R1232:1237 bcv.vmtype <> Istore constr
+R1262:1266 bcv.avm A ::x_'-->'_x_','_x not
+R1270:1290 bcv.avm A ::x_'-->'_x_','_x not
+R1267:1269 bcv.vmtype <> ret constr
+R1291:1300 bcv.lib Dico empty def
+def 1386:1395 A startstate
+R1397:1401 bcv.avm A State rec
+R1421:1606 bcv.avm A Build_State constr
+R1453:1462 bcv.lib Dico empty def
+R1435:1437 Coq.Init.Datatypes <> nil constr
+R1492:1595 bcv.avm A Build_Frame constr
+R1593:1595 Coq.Init.Datatypes <> nil constr
+R1524:1528 bcv.avm A ::x_'-->'_x_','_x not
+R1533:1535 bcv.avm A ::x_'-->'_x_','_x not
+R1529:1532 bcv.vmtype <> Tint constr
+R1537:1541 bcv.avm A ::x_'-->'_x_','_x not
+R1546:1547 bcv.avm A ::x_'-->'_x_','_x not
+R1542:1545 bcv.vmtype <> Tint constr
+R1548:1557 bcv.lib Dico empty def
+R1499:1502 bcv.avm A prog def
+def 1630:1635 A exec_n
+R1642:1646 bcv.avm A State rec
+R1652:1654 Coq.Init.Datatypes <> nat ind
+R1669:1672 Coq.Init.Datatypes <> list ind
+R1675:1680 Coq.Init.Datatypes <> option ind
+R1682:1686 bcv.avm A State rec
+R1702:1702 bcv.avm <> n var
+R1722:1723 Coq.Lists.List ListNotations :list_scope:'['_x_']' not
+R1730:1731 Coq.Lists.List ListNotations :list_scope:'['_x_']' not
+R1724:1727 Coq.Init.Datatypes <> Some constr
+R1729:1729 bcv.avm <> s var
+R1741:1741 Coq.Init.Datatypes <> S constr
+R1768:1776 bcv.avm A exec_step def
+R1778:1778 bcv.avm <> s var
+R1811:1814 Coq.Init.Datatypes <> list ind
+R1817:1822 Coq.Init.Datatypes <> option ind
+R1824:1828 bcv.avm A State rec
+R1845:1848 Coq.Init.Datatypes <> list ind
+R1851:1856 Coq.Init.Datatypes <> option ind
+R1858:1862 bcv.avm A State rec
+R1884:1885 bcv.avm <> ls var
+R1906:1908 Coq.Init.Datatypes <> nil constr
+R1913:1915 Coq.Init.Datatypes <> nil constr
+R1935:1938 Coq.Init.Datatypes <> :list_scope:x_'::'_x not
+R1931:1934 Coq.Init.Datatypes <> None constr
+R1950:1953 Coq.Init.Datatypes <> :list_scope:x_'::'_x not
+R1946:1949 Coq.Init.Datatypes <> None constr
+R1954:1961 bcv.avm <> exec_l_n var
+R1963:1965 bcv.avm <> ls' var
+R1988:1991 Coq.Init.Datatypes <> :list_scope:x_'::'_x not
+R1981:1984 Coq.Init.Datatypes <> Some constr
+R1999:2006 Coq.Lists.List <> app syndef
+R2024:2031 bcv.avm <> exec_l_n var
+R2033:2035 bcv.avm <> ls' var
+R2009:2014 bcv.avm <> exec_n def
+R2053:2055 bcv.avm <> ls' var
+R2083:2088 bcv.avm A exec_n def
+R2090:2099 bcv.avm A startstate def
+R2120:2125 bcv.avm A exec_n def
+R2127:2136 bcv.avm A startstate def
+R2157:2162 bcv.avm A exec_n def
+R2164:2173 bcv.avm A startstate def
+prf 2187:2191 A essai
+R2235:2243 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2258:2260 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2247:2256 bcv.avm A framestack proj
+R2244:2244 bcv.avm <> x var
+R2264:2273 bcv.avm A framestack proj
+R2261:2261 bcv.avm <> s var
+R2222:2224 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2211:2219 bcv.avm A exec_step def
+R2221:2221 bcv.avm <> s var
+R2225:2226 Coq.Lists.List ListNotations :list_scope:'['_x_']' not
+R2233:2234 Coq.Lists.List ListNotations :list_scope:'['_x_']' not
+R2227:2230 Coq.Init.Datatypes <> Some constr
+R2232:2232 bcv.avm <> x var
+R2325:2333 bcv.avm A exec_step def
+R2325:2333 bcv.avm A exec_step def
+prf 2440:2445 A essai2
+R2499:2507 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2522:2524 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2511:2520 bcv.avm A framestack proj
+R2508:2508 bcv.avm <> x var
+R2528:2537 bcv.avm A framestack proj
+R2525:2525 bcv.avm <> s var
+R2478:2480 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2467:2475 bcv.avm A exec_step def
+R2477:2477 bcv.avm <> s var
+R2481:2482 Coq.Lists.List ListNotations :list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R2489:2491 Coq.Lists.List ListNotations :list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R2498:2498 Coq.Lists.List ListNotations :list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R2483:2486 Coq.Init.Datatypes <> Some constr
+R2488:2488 bcv.avm <> x var
+R2492:2495 Coq.Init.Datatypes <> Some constr
+R2497:2497 bcv.avm <> y var
+R2589:2597 bcv.avm A exec_step def
+R2589:2597 bcv.avm A exec_step def
+R2700:2700 bcv.avm A <> mod

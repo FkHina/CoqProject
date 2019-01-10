@@ -1,0 +1,13 @@
+DIGEST d89490ea09c3564d79d14008eadf40f7
+Fbcv.bcv
+R15:24 bcv.vmtype <> <> lib
+R42:61 bcv.abstract_correct <> <> lib
+def 223:234 <> bcv_one_meth
+R242:250 bcv.vmtype <> MethodDef rec
+R254:257 Coq.Init.Datatypes <> bool ind
+R261:265 Coq.Init.Datatypes <> false constr
+def 482:484 <> bcv
+R493:496 Coq.Init.Datatypes <> list ind
+R498:506 bcv.vmtype <> MethodDef rec
+R510:513 Coq.Init.Datatypes <> bool ind
+R519:523 Coq.Init.Datatypes <> false constr

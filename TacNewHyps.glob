@@ -1,0 +1,5 @@
+DIGEST 1cae9ba3fb6e23f319044cd3cf3c058e
+Fbcv.TacNewHyps
+R1159:1162 Coq.Init.Logic <> True ind
+R3455:3457 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3455:3457 Coq.Init.Logic <> :type_scope:x_'='_x not
